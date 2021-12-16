@@ -12,14 +12,14 @@ import './index.css';
 import 'react-toastify/dist/ReactToastify.css';
 
 const app = (
-  // <Provider store={store}>
+  <Provider store={store}>
     <Router history={history}>
       <ThemeProvider theme={theme}>
         <ToastContainer/>
         <App/>
       </ThemeProvider>
     </Router>
-  // </Provider>
+  </Provider>
 );
 
 ReactDOM.render(app, document.getElementById('root'));
